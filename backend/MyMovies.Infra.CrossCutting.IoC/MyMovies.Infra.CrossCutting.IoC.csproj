@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>MyMovies.Infra.CrossCutting.IoC</AssemblyName>
+    <PackageId>MyMovies.Infra.CrossCutting.IoC</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyMovies.Domain\MyMovies.Domain.csproj" />
+    <ProjectReference Include="..\MyMovies.Service\MyMovies.Service.csproj" />
+    <ProjectReference Include="..\MyMovies.Domain\MyMovies.Domain.csproj" />   
+    <ProjectReference Include="..\MyMovies.Infra.Data\MyMovies.Infra.Data.csproj" />	
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+  </ItemGroup>
+
+</Project>
